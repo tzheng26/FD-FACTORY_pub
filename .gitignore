@@ -1,0 +1,22 @@
+# dataset
+/data/fuzz_drivers/
+/data/fuzzing_results/
+/data/result_analysis/
+
+/tmp/
+
+# logs
+/logs/
+
+# crash
+crash-*
+oom-*
+leak-*
+
+# system files
+.env
+*.log
+.idea/
+.vscode/
+__pycache__/
+*.pt

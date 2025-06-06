@@ -1,0 +1,59 @@
+--------------------
+Errors detected:
+code_after_ruff_fix.py:7:21: F401 [*] `numpy` imported but unused
+  |
+5 | with atheris.instrument_imports():
+6 |     import torch
+7 |     import numpy as np
+  |                     ^^ F401
+  |
+  = help: Remove unused import: `numpy`
+
+code_after_ruff_fix.py:37:18: F821 Undefined name `alpha`
+   |
+35 |         "input": input,
+36 |         "other": other,
+37 |         "alpha": alpha,
+   |                  ^^^^^ F821
+38 |         "out": out,
+39 |     }
+   |
+
+Found 2 errors.
+[*] 1 fixable with the `--fix` option.
+
+Exit code: 1
+
+--------------------
+Proposed fixes (diff):
+--- code_after_ruff_fix.py
++++ code_after_ruff_fix.py
+@@ -4,7 +4,6 @@
+ 
+ with atheris.instrument_imports():
+     import torch
+-    import numpy as np
+ 
+ 
+ class SecurityAlert(Exception):
+
+Would fix 1 error.
+
+Exit code: 1
+
+--------------------
+Fixes applied:
+code_after_ruff_fix.py:36:18: F821 Undefined name `alpha`
+   |
+34 |         "input": input,
+35 |         "other": other,
+36 |         "alpha": alpha,
+   |                  ^^^^^ F821
+37 |         "out": out,
+38 |     }
+   |
+
+Found 2 errors (1 fixed, 1 remaining).
+
+Exit code: 1
+
