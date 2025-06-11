@@ -10,6 +10,9 @@ Zheng, Tianming, et al. "FD-FACTORY: Large Language Model-based Fuzz Driver Gene
 **Code**:
 The complete code for FD-FACTORY will be available after the paper is accepted. 
 
+## Workflow
+![Workflow of FD-FACTORY](./FD-FACTORY_workflow.png)
+
 ## Prerequisites
 
 1. OS: Linux
